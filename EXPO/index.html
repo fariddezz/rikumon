@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"/>
+        <title>RIKUMON</title>
+        <link rel="stylesheet" href="./style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <section id="select-pet">
+            <h1 class="title">RIKUMON</h1>
+            
+            <h2 class="subtitle">Select your pet:</h2>
+
+            <div id = "cardsContainer" class="targets">    
+        
+            </div>
+
+            <button id="b-pselection">Select</button>
+        </section>  
+        
+        <section id="view-map">
+            <h1 class="title-map">Walk the map with your mokepon</h1>
+            <canvas id="canvasMap"></canvas>
+            <button class="buttons-map" onmouseup="stopMotion()" onmousedown="moveUp()" ontouchstart="moveUp()" ontouchend="stopMotion()">Move Up</button>
+            <div id="buttons-map">
+                <button class="buttons-map" onmouseup="stopMotion()" onmousedown="moveLeft()" ontouchstart="moveLeft()" ontouchend="stopMotion()">Move Left</button>
+                <button class="buttons-map" onmouseup="stopMotion()" onmousedown="moveDown()" ontouchstart="moveDown()" ontouchend="stopMotion()">Move Down</button>
+                <button class="buttons-map" onmouseup="stopMotion()" onmousedown="moveRight()" ontouchstart="moveRight()" ontouchend="stopMotion()">Move Right</button>
+            </div>
+        </section>
+
+        <section id = "select-attack">
+            <h1 class="title">RIKUMON</h1>
+            
+            <h2 class="subtitle">Choose your Attack:</h2>
+            
+            <div id ="attacksContainer" class = "ATK-Buttons">
+
+            </div>
+                            
+                <div id="Mensagges">
+                    <p id = "result">Be lucky</p> 
+
+                    <section id="restart">
+                        <button id="b-restart">Restart</button>
+                    </section> 
+                </div>
+               
+                                   
+            <div class = "combat">
+                
+                <div class = "playersregister">
+                    <p id = "SpanVictoriesPlayersPet">0</p>
+                    <p id="spanPlayersPet"></p>
+                    <div id = "player-attacks"></div>
+                </div>
+                
+                <div class = "enemysregister">
+                    <p id = "SpanVictoriesEnemysPet">0</p> 
+                    <p id="spanEnemysPet"></p>  
+                    <div id = "enemy-attacks"></div>           
+                </div>
+                
+            </div>
+            
+           
+        </section>
+        <script src="./js/rikumon.js"></script>           
+    </body>
+</html>

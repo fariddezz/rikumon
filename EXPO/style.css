@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Rubik+Bubbles&family=Titillium+Web:wght@200&family=Yeon+Sung&display=swap');
+@import url("https://use.typekit.net/tds2dtn.css");
+
+body{
+	font-family: 'Bebas Neue', cursive;
+	background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/01073865290819.5d61d475f0072.jpg');
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: cover;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+
+#select-pet{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title{
+	color: #EAEAEA;
+    font-size: 120px;
+    height: 50px;
+    font-family: 'Anton', sans-serif;
+	margin-top: -19px;
+    margin-bottom: 85px;
+    text-align: center;
+
+}
+
+.subtitle{
+	display: flex;
+	color: #252A34;
+	font-size: 40px;
+}
+
+input{
+    width: 30px;
+    height: 14px;
+	display: none;
+}
+
+.targets{
+	display: flex;
+	gap: 10px;
+}
+
+#rikumons {
+	border-radius: 14px;
+    width: 229px;
+    height: 293px;
+    padding: 27px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #adff2fc4;
+    font-size: 40px;
+}
+
+input:checked + #rikumons {
+	background-color: #a760ffc9;
+}
+
+#rikumons:hover {
+    cursor: pointer;
+}
+
+#rikumons img{
+	height: 170px;
+}
+
+
+#b-pselection{
+    width: 280px;
+    height: 105px;
+    border-radius: 32px;
+    border: 7px groove #a0a4ab;
+    background-color: #252a34;
+    color: #eaeaea;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 48px;
+    margin-top: 48px;
+    margin-right: 18px;
+}
+
+#select-attack{
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-map{
+    color: #D14D2E;
+    font-family: "worker-3d-block1", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #201f1f;
+    text-align: center;
+}
+
+#view-map{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#canvasMap{
+    border-style: double;
+    border-color: #a0a4ab;
+    border-width: 9px;
+}
+
+#view-map button{
+    width: 120px;
+    height: 60px;
+    border: 7px groove #7f8186;
+    background-color: #F6BA6F;
+    color: #fff;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 20px;
+    margin-top: 16px;
+}
+
+.attack-button{
+	width: 200px;
+    height: 80px;
+    border-radius: 140px;
+    font-size: 30px;
+    font-family: 'Yeon Sung', cursive;
+    background-color: #F0DD62;
+    color: aquamarine;
+    color: #ffcbcb;
+}
+
+.ATK-Buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+#Mensagges{
+    width: 530px;
+    height: 200px;
+    background-color: #003865eb;
+    border-radius: 20px;
+    margin: 25px;
+    display: flex;
+    font-size: 36px;
+    font-family: 'Rubik Bubbles', cursive;
+    flex-direction: column;
+    padding: 33px;
+    justify-content: center;
+    align-items: center;
+}	
+
+#b-restart{
+	background-color: #f9f9c5;
+    border-style: inset;
+    color: #a149fa;
+    border-color: chocolate;
+    width: 136px;
+    height: 33px;
+    font-size: 24px;
+	font-family: 'Yeon Sung', cursive;
+}
+
+.combat{
+	display: grid;
+    grid-template-columns: 150px 150px;
+    column-gap: 28px;
+	text-align: center;
+    justify-content: space-between;
+    gap: 153px;
+    display: flex;
+}
+
+#SpanVictoriesPlayersPet, #SpanVictoriesEnemysPet {
+font-size: 64px;
+}
+
+#spanEnemysPet, #spanPlayersPet{
+    font-size: 45px;
+}
+
+.enemysregister, .playersregister{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#enemy-attacks, #player-attacks{
+    font-size: 24px;
+}
+
+.buttons-map{
+user-select: none;
+}
+
+
+@media (max-width: 560px){
+	.title {
+	color: #EAEAEA;
+    font-size: 88px;
+    margin-bottom: 40px;
+	}
+	
+	.targets {
+		flex-direction: column;
+	}
+
+	.ATK-Buttons {
+	display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+	text-align: center;
+	gap: 12px
+	}
+    
+    #Mensagges {
+        width: 277px;
+        height: 207px;
+        text-align: center;
+    }
+}       
+
+@media (max-width: 360px){
+    #view-map div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
