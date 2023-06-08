@@ -9,10 +9,10 @@ app.use(cors());
 // le decimos a express.js que use express.json para poder recibir y enviar datos en formato json
 app.use(express.json());
 //importamos static para poder utilizarlo en nuestro proyecto
-app.use(express.static('EXPO'));
+app.use(express.static('public'));
 
  
-const port = 3000;
+const port = 8080;
 
 let players = [];   // Array de jugadores
 
