@@ -49,7 +49,7 @@ let bAero;
 
 //Map Variables
 let backgroundMap = new Image()
-backgroundMap.src = './assets/Maps/rikumap.png'
+backgroundMap.src = 'https://i.imgur.com/xaIg629.png'
 let heightY;
 let mapWidth = window.innerWidth - (0.1 * window.innerWidth)
 const mapMaxWidth = 800
@@ -114,17 +114,17 @@ class Rikumon {
 
 //Agregando Objetos Brrrrrrrrr
 
-let frektro = new Rikumon ('Frektro', './assets/Rikumons/png/Frektro.png', 'Electro', 'assets/HEAD_ICONS/Frektro_Head_Icon_Sticker.png')
+let frektro = new Rikumon ('Frektro', 'https://i.imgur.com/NZ3SlIf.png', 'Electro', 'https://i.imgur.com/nfhFrX3.png')
 
-let gryrho = new Rikumon ('Gryrho', './assets/Rikumons/png/Gryrho.png', 'Pyro', 'assets/HEAD_ICONS/Gryrho_Head_Icon_Sticker.png')
+let gryrho = new Rikumon ('Gryrho', 'https://i.imgur.com/g0NgomL.png', 'Pyro', 'https://i.imgur.com/gfebr3i.png')
 
-let thornhydro = new Rikumon ('Thornhydro', './assets/Rikumons/png/Thornhydro.png', 'Hydro', 'assets/HEAD_ICONS/Thornhydro_Head_Icon_Sticker.png')
+let thornhydro = new Rikumon ('Thornhydro', 'https://i.imgur.com/Io4QElE.png', 'Hydro', 'https://i.imgur.com/2qCHvAm.png')
 
-let cryofrist = new Rikumon ('Cryofrist', './assets/Rikumons/png/Cryofrist.png', 'Cryo', 'assets/HEAD_ICONS/Cryofrist_Head_Icon_Sticker.png')
+let cryofrist = new Rikumon ('Cryofrist', 'https://i.imgur.com/XPR85bx.png', 'Cryo', 'https://i.imgur.com/9cEhi6p.png')
 
-let terrafang = new Rikumon ('Terrafang', './assets/Rikumons/png/Terrafang.png', 'Terra', 'assets/HEAD_ICONS/Terrafang_Head_Icon_Sticker.png')
+let terrafang = new Rikumon ('Terrafang', 'https://i.imgur.com/0kTTYv2.png', 'Terra', 'https://i.imgur.com/Yc3VjYg.png')
 
-let skywing = new Rikumon('Skywing', './assets/Rikumons/png/Skywing.png', 'Aero', 'assets/HEAD_ICONS/Skywing_Head_Icon_Sticker.png')
+let skywing = new Rikumon('Skywing', 'https://i.imgur.com/3cco1a9.png', 'Aero', 'https://i.imgur.com/vPPrMKL.png')
 
 //Agregando ataques a los Rikumons
 
@@ -272,22 +272,22 @@ function sendPosition(x, y){
                         if(element.rikumon != undefined){
                             switch (element.rikumon.name) {
                               case 'Frektro':
-                                enemyForDraw = new Rikumon('Frektro', './assets/Rikumons/png/Frektro.png', 'Electro', 'assets/HEAD_ICONS/Frektro_Head_Icon_Sticker.png', element.id);
+                                enemyForDraw = new Rikumon('Frektro', 'https://i.imgur.com/NZ3SlIf.png', 'Electro', 'https://i.imgur.com/nfhFrX3.png', element.id);
                                 break;
                               case 'Gryrho':
-                                enemyForDraw = new Rikumon('Gryrho', './assets/Rikumons/png/Gryrho.png', 'Pyro', 'assets/HEAD_ICONS/Gryrho_Head_Icon_Sticker.png', element.id);
+                                enemyForDraw = new Rikumon('Gryrho', 'https://i.imgur.com/g0NgomL.png', 'Pyro', 'https://i.imgur.com/gfebr3i.png', element.id);
                                 break;
                               case 'Thornhydro':
-                                enemyForDraw = new Rikumon('Thornhydro', './assets/Rikumons/png/Thornhydro.png', 'Hydro', 'assets/HEAD_ICONS/Thornhydro_Head_Icon_Sticker.png', element.id);
+                                enemyForDraw = new Rikumon('Thornhydro', 'https://i.imgur.com/Io4QElE.png', 'Hydro', 'https://i.imgur.com/2qCHvAm.png', element.id);
                                 break;
                               case 'Cryofrist':
-                                enemyForDraw = new Rikumon('Cryofrist', './assets/Rikumons/png/Cryofrist.png', 'Cryo', 'assets/HEAD_ICONS/Cryofrist_Head_Icon_Sticker.png', element.id);
+                                enemyForDraw = new Rikumon('Cryofrist', 'https://i.imgur.com/XPR85bx.png', 'Cryo', 'https://i.imgur.com/9cEhi6p.png', element.id);
                                 break;
                               case 'Terrafang':
-                                enemyForDraw = new Rikumon('Terrafang', './assets/Rikumons/png/Terrafang.png', 'Terra', 'assets/HEAD_ICONS/Terrafang_Head_Icon_Sticker.png', element.id);
+                                enemyForDraw = new Rikumon('Terrafang', 'https://i.imgur.com/0kTTYv2.png', 'Terra', 'https://i.imgur.com/Yc3VjYg.png', element.id);
                                 break;
                               case 'Skywing':
-                                enemyForDraw = new Rikumon('Skywing', './assets/Rikumons/png/Skywing.png', 'Aero', 'assets/HEAD_ICONS/Skywing_Head_Icon_Sticker.png', element.id);
+                                enemyForDraw = new Rikumon('Skywing', 'https://i.imgur.com/3cco1a9.png', 'Aero', 'https://i.imgur.com/vPPrMKL.png', element.id);
                                 break;
                             }
                                 enemyForDraw.x = element.x;
