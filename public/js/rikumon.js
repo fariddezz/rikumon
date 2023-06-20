@@ -220,7 +220,7 @@ function random(min, max) {
 }
       
 function joinToGame(){
-    fetch("http://192.168.1.10:8080/join")
+    fetch("http://"-insert_your_ipv4-":8080/join")
         .then(function (response) {
             if(response.ok){
                 response.text()
@@ -233,7 +233,7 @@ function joinToGame(){
 }
 
 function checkerPetBackground(M){
-    fetch(`http://192.168.1.10:8080/rikumon/${playerID}`,{
+    fetch(`http://"-insert_your_ipv4-":8080/rikumon/${playerID}`,{
         method: 'POST',
         headers: {
             "content-type": "application/json"
@@ -247,7 +247,7 @@ function checkerPetBackground(M){
 }
 
 function sendPosition(x, y){
-    fetch(`http://192.168.1.10:8080/rikumon/${playerID}/position`,{
+    fetch(`http://"-insert_your_ipv4-":8080/rikumon/${playerID}/position`,{
         method: 'POST',
         headers: {
             "content-type": "application/json"
@@ -304,7 +304,7 @@ function sendPosition(x, y){
 
 
 function sendAttacks(elpp){
-    fetch(`http://192.168.1.10:8080/rikumon/${playerID}/attacks`,{
+    fetch(`http://"-insert_your_ipv4-":8080/rikumon/${playerID}/attacks`,{
         method: 'POST',
         headers: {
             "content-type": "application/json"
@@ -317,7 +317,7 @@ function sendAttacks(elpp){
 }
 
 function getAttacks(){
-    fetch(`http://192.168.1.10:8080/rikumon/${enemyID}/attacks`)
+    fetch(`http://"-insert_your_ipv4-":8080/rikumon/${enemyID}/attacks`)
         .then(function (response) {
             if (response.ok) {
                 response.json()
